@@ -1,15 +1,22 @@
 import { observable } from 'mobx';
 import { createMuiTheme, Theme as MuiTheme } from '@material-ui/core';
+import { grey } from '@material-ui/core/colors';
 
 const lightTheme = createMuiTheme({
     palette: {
         type: 'light',
+        primary: {
+            main: grey['800'],
+        },
     },
 });
 
 const darkTheme = createMuiTheme({
     palette: {
         type: 'dark',
+        primary: {
+            main: grey['300'],
+        },
     },
 });
 
